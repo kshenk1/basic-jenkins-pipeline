@@ -7,17 +7,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                checkout(
-                    [
-                        $class: 'GitSCM', 
-                        branches: [[name: '*/master']], 
-                        extensions: [], 
-                        userRemoteConfigs: [[
-                            credentialsId: '403c6e06-a112-4747-bcbd-c4af2d8a46ea', 
-                            url: 'https://github.com/kshenk1/basic-jenkins-pipeline'
-                            ]]
-                    ]
-                )
+                checkout scm
             }
         }
          stage('Do the deployment') {
