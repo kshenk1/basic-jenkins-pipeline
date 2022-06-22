@@ -1,0 +1,12 @@
+{
+  "active": true,
+  "events": [
+    "push"
+  ],
+  "config": {
+    "url": "https://kshenk-ci.cbci-demo.com/cjoc/github-webhook/",
+    "content_type": "form",
+    "insecure_ssl": "1",
+    "secret": "110a3051732038a1041ad51c760ed2a307"
+  }
+}
